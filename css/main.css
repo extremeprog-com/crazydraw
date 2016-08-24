@@ -1,0 +1,143 @@
+body { background-color: #D0021B; color: #4E4C4C;  }
+    #main-container {  position: absolute; left: 2.083em; right: 2.083em; top: 2.083em; bottom: 2.083em; background: #ffffff;
+        overflow: hidden;
+        /*-webkit-transform: translate(-50%, -50%);*/
+        /*transform: translate(-50%, -50%);*/
+
+        -webkit-box-shadow: 0 3px 12px 0 rgba(0, 0, 0, 0.12), 0 3px 8px 0 rgba(0, 0, 0, 0.24);
+        -moz-box-shadow:    0 3px 12px 0 rgba(0, 0, 0, 0.12), 0 3px 8px 0 rgba(0, 0, 0, 0.24);
+        box-shadow:         0 3px 12px 0 rgba(0, 0, 0, 0.12), 0 3px 8px 0 rgba(0, 0, 0, 0.24);
+    }
+
+    #circles-container { position: absolute; width: 100%; height: 100%; }
+        #red-circle { position: absolute; width: 500px; height: 500px; border-radius: 50%; background-color: #D0021B; top: -200px; right: 209px; opacity: 0.4; }
+        #green-circle { position: absolute; width: 900px; height: 900px; border-radius: 50%; background-color: #02d0b7; bottom: -288px; right: -340px; opacity: 0.4; }
+        #purple-circle { position: absolute; width: 300px; height: 300px; border-radius: 50%; background-color: #b702d0; top: -208px; right: 580px; opacity: 0.4; }
+        #yellow-circle { position: absolute; width: 300px; height: 300px; border-radius: 50%; background-color: #d0b702; top: -73px; right: -50px; opacity: 0.4; }
+
+    #text-wrap { position: absolute; top: 13em; left: 9.53em; width: 100%; }
+    #logo { font-size: 4.375em; }
+    #description { margin-top: 1.2em; line-height: 1.2em; font-size: 2em; width: 22em;  font-weight: 300; }
+
+    .phrases-column { padding-right: 9em; color: #5B6B79; }
+
+    #tips { font-size: 1.5em; margin-top: 6.2em; width: 31em; line-height: 1.1em;   font-weight: 300;}
+    #action-button { margin-top: 2.4em; }
+        #action-button a { font-size: 1.5em; border: 3px solid #D0021B; color: #D0021B; text-align: center; padding: 1em 1.7em; text-decoration: none;}
+        #action-button a:hover { color: #fff; background-color: #D0021B;
+            -webkit-transition: all .5s ease, opacity .5s ease;
+               -moz-transition: all .5s ease, opacity .5s ease;
+                    transition: all .5s ease, opacity .5s ease; }
+
+
+        #phrase { position: relative; }
+
+        #phrase-line {
+            background-color: #FFDDDD;
+            position: absolute;
+            height: 100%;
+            z-index: -1;
+            top: 0;
+            left: 0;
+        }
+
+    .Paused #next { visibility: hidden; opacity: 0;
+        -webkit-transition: all .8s ease, opacity .5s ease;
+           -moz-transition: all .8s ease, opacity .5s ease;
+                transition: all .8s ease, opacity .5s ease; }
+
+    .Paused #play { background: url("../img/PlayBut.svg") no-repeat; background-size: contain; }
+
+
+    #grid { position: absolute; left: 4.4em; right: 4.4em; height: 2em; margin-top: 2.5em; }
+        #grid ul { border: 2px solid #D0021B; height: 100%; text-align: center; display: table; width: 100%; }
+            #grid ul li { display: table-cell; list-style-type: none; border-right: 1px solid #D0021B; height: 100%; position: relative; }
+            #grid ul li a { left: 0; width: 2px; height: 2px; }
+            #grid ul li.complete { background-color: rgba(208, 2, 27, 0.37); opacity: 1;
+                -webkit-transition: all .5s ease, opacity .5s ease;
+                   -moz-transition: all .5s ease, opacity .5s ease;
+                        transition: all .5s ease, opacity .5s ease; }
+
+            #grid ul li:last-child { border-right: 1px solid rgba(255,255,255,0); }
+
+
+            /*.Playing #grid ul li.complete a { width: 100%; background: #02d0b7; position: absolute; height: 100%;*/
+                /*-webkit-transition: width 120s ease;*/
+                /*-moz-transition: width 120s ease;*/
+                /*transition: width 120s ease; }*/
+
+    #phrase-wrap { position: absolute; top: 50%; text-align: center; left: 50%;
+        -webkit-transform: translate(-50%, -75%);
+        transform: translate(-50%, -75%);
+    }
+    #time-charge { position: absolute; top: 50%; text-align: center; left: 50%;
+        -webkit-transform: translate(-50%, -75%);
+        transform: translate(-50%, -50%);
+        width: 40px; height: 40px; border-radius: 50%; background-color: #D0021B; opacity: 0.4; visibility: hidden; }
+
+    /*.Playing #time-charge {  width: 1700px; height: 1700px; visibility: visible;*/
+        /*-webkit-transition: all 120s ease, opacity .5s ease;*/
+           /*-moz-transition: all 120s ease, opacity .5s ease;*/
+                /*transition: all 120s ease, opacity .5s ease; }*/
+
+    .Paused #phrase-wrap { opacity: 0; z-index: 9;
+        -webkit-transition: all .8s ease, opacity .5s ease;
+           -moz-transition: all .8s ease, opacity .5s ease;
+                transition: all .8s ease, opacity .5s ease; }
+
+    .Paused #pause-wrap { visibility: visible;
+        -webkit-transition: all .8s ease, opacity .5s ease;
+           -moz-transition: all .8s ease, opacity .5s ease;
+                transition: all .8s ease, opacity .5s ease; }
+
+    .Paused #grid ul { transform: scale(0.5); opacity: 0.5;
+        -webkit-transition: all .8s ease, opacity .5s ease;
+        -moz-transition: all .8s ease, opacity .5s ease;
+        transition: all .8s ease, opacity .5s ease; }
+
+    #pause-wrap { position: absolute; top: 50%; text-align: center; left: 50%;
+        -webkit-transform: translate(-50%, -75%);
+        transform: translate(-50%, -75%); visibility: hidden; max-width: 40em; }
+
+        #phrase-tip { color: #9B9B9B; font-size: 2em; font-weight: 300; line-height: 1em;}
+        #phrase { font-size: 4.750em; font-weight: 300; line-height: 0.9em; }
+
+        #pause-wrap ul li { list-style-type: none; display: inline-block; font-size: 1.5em; margin-top: 1em; margin-bottom: 3em; margin-left: 6em; }
+        #pause-wrap ul li:first-child { margin-left: 0; }
+            #pause-wrap ul li a { color: #4E4C4C; }
+
+    #controls { position: absolute; bottom: 5.25em; text-align: center; width: 100%; }
+        #controls div { cursor: pointer; display: inline-block; }
+        #play { width: 9em; height: 9em; margin-left: 6.25em; background: url("../img/Play.svg") no-repeat; background-size: contain; }
+        #next { width: 3em; height: 3em; margin-left: 2em; margin-bottom: 3em; background: url('../img/Next.svg') no-repeat; background-size: contain; }
+
+
+    #footer { text-align: center; position: absolute; bottom: 1.9em; width: 100%; font-size: 1.5em; }
+        #footer #action-button { margin-bottom: 4em; }
+        #contact-link { color: #4E4C4C; }
+        #return-mainpage { color: #4E4C4C; display: block; margin-bottom: 1em; }
+
+
+    #social-buttons { margin-top: 0.5em; }
+        #social-buttons a { margin-right: 0.5em; text-decoration: none; display: block; float: left; margin-top: 5px; }
+        #share-facebook { border: 2px solid #4768B5; color: #4768B5; padding: 0.8em 0.8em 0.8em 3em; font-size: 1.4em; background: url("../img/Facebook_Logo.svg") 0.8em 0.4em no-repeat;}
+        #share-vk { border: 2px solid #496C93; color: #496C93; padding: 0.8em 0.8em 0.8em 5em; font-size: 1.4em; background: url("../img/VK_Logo.svg") 0.4em 0.5em no-repeat; }
+        #share-twitter { border: 2px solid #2AA9E0; color: #2AA9E0; padding: 0.8em 0.8em 0.8em 4em; font-size: 1.4em; background: url("../img/Twitter_logo.svg") 0.4em 0.4em no-repeat; }
+
+        #main-share-facebook { margin-left: 0.4em; padding: 0.5em 0.8em 0.5em 0.8em; font-size: 1.4em; background: url("../img/Facebook_Logo.svg") 0.8em 0.4em no-repeat;}
+        #main-share-twitter  { margin-left: 0.4em; padding: 0.498em 0.6em 0.5em 1.6em; font-size: 1.4em; background: url("../img/Twitter_logo.svg") 0.4em 0.4em no-repeat; }
+        #main-share-vk       { margin-left: 0.4em; padding: 0.5em 0.8em 0.5em 1.8em; font-size: 1.4em; background: url("../img/VK_Logo.svg") 0 0.5em no-repeat; }
+
+
+    #contacts-wrap { margin-top: 4em; }
+        .contact-link { float: left; margin-right: 4em; }
+        .contact-photo { width: 15em; height: 15em; border-radius: 50%; }
+            #murzina-photo { background: url("../img/murzina.jpg") 0 -1em no-repeat; background-size: cover; }
+            #sergienko-photo { background: url("../img/segienko.jpg") no-repeat; background-size: cover; }
+        .contact-name { font-size: 2em; font-weight: 300; display: block; margin-top: 0.5em; color: #4E4C4C; text-decoration: none; }
+        .contact-info { font-size: 1.5em; display: block; font-weight: 300; margin-top: 0.3em; }
+
+@media screen
+and (max-width: 700px) {
+    #text-wrap { position: absolute; top: 7em; left: 3.53em; width: 100%; }
+}

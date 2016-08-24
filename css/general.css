@@ -1,0 +1,108 @@
+/*@font-face {*/
+    /*font-family: 'PT Sans';*/
+    /*font-style: normal;*/
+    /*font-weight: 400;*/
+    /*src: local('PT Sans'), local('PTSans-Regular'),*/
+    /*url(../fonts/PT_Sans/PT_Sans-Web-Regular.woff) format('woff'),*/
+    /*url(../fonts/PT_Sans/PT_Sans-Web-Regular.ttf) format('truetype');*/
+/*}*/
+
+/*@font-face {*/
+    /*font-family: 'PT Sans';*/
+    /*font-style: normal;*/
+    /*font-weight: 700;*/
+    /*src: local('PT Sans Bold'), local('PTSans-Bold'),*/
+    /*url(../fonts/PT_Sans/PT_Sans-Web-Bold.woff) format('woff'),*/
+    /*url(../fonts/PT_Sans/PT_Sans-Web-Bold.ttf) format('truetype');*/
+/*}*/
+
+/*@font-face {*/
+    /*font-family: 'PT Sans';*/
+    /*font-style: italic;*/
+    /*font-weight: 400;*/
+    /*src: local('PT Sans Italic'), local('PTSans-Italic'),*/
+    /*url(../fonts/PT_Sans/PT_Sans-Web-Italic.woff) format('woff'),*/
+    /*url(../fonts/PT_Sans/PT_Sans-Web-Italic.ttf) format('truetype');*/
+/*}*/
+
+/*@font-face {*/
+    /*font-family: 'Roboto';*/
+    /*font-style: normal;*/
+    /*font-weight: 100;*/
+    /*src: local('Roboto Thin'), local('Roboto-Thin'),*/
+    /*url(../fonts/Roboto/Roboto-Thin.woff) format('woff'),*/
+    /*url(../fonts/Roboto/Roboto-Thin.ttf) format('truetype');*/
+/*}*/
+
+/*@font-face {*/
+    /*font-family: 'Roboto';*/
+    /*font-style: normal;*/
+    /*font-weight: 300;*/
+    /*src: local('Roboto Light'), local('Roboto-Light'),*/
+    /*url(../fonts/Roboto/Roboto-Light.woff) format('woff'),*/
+    /*url(../fonts/Roboto/Roboto-Light.ttf) format('truetype');*/
+/*}*/
+
+/*@font-face {*/
+    /*font-family: 'Roboto';*/
+    /*font-style: normal;*/
+    /*font-weight: 400;*/
+    /*src: local('Roboto Regular'), local('Roboto-Regular'),*/
+    /*url(../fonts/Roboto/Roboto-Regular.woff) format('woff'),*/
+    /*url(../fonts/Roboto/Roboto-Regular.ttf) format('truetype');*/
+/*}*/
+
+/*@font-face {*/
+    /*font-family: 'Roboto';*/
+    /*font-style: normal;*/
+    /*font-weight: 500;*/
+    /*src: local('Roboto Medium'), local('Roboto-Medium'),*/
+    /*url(../fonts/Roboto/Roboto-Medium.woff) format('woff'),*/
+    /*url(../fonts/Roboto/Roboto-Medium.ttf) format('truetype');*/
+/*}*/
+
+/*@font-face {*/
+    /*font-family: 'Roboto';*/
+    /*font-style: normal;*/
+    /*font-weight: 700;*/
+    /*src: local('Roboto Bold'), local('Roboto-Bold'),*/
+    /*url(../fonts/Roboto/Roboto-Bold.woff) format('woff'),*/
+    /*url(../fonts/Roboto/Roboto-Bold.ttf) format('truetype');*/
+/*}*/
+
+html, body {
+    height: 100%;
+    min-height: 100%;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+html, body, div, ul, ol, li, dl, dt, dd, h1, h2, h3, h4, h5, h6, pre, form, p, blockquote, fieldset, input, abbr, article, aside, details, figcaption, figure, footer, header, mark, meter, nav, output, progress, section, summary, time {
+    margin: 0;
+    padding: 0;
+    font: 12px/18px 'Roboto', Arial, sans-serif;
+}
+h1, h2, h3, h4, h5, h6, pre, code, address, caption, cite, code, em, strong, th, figcaption {
+    font-size: 1em;
+    font-style: normal;
+    font-weight: normal;
+}
+fieldset, iframe {
+    border: medium none;
+}
+caption, th {
+    text-align: left;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+article, aside, footer, header, nav, section, figure, figcaption {
+    display: block;
+}
+html {
+    background-color: #FFFFFF;
+}
+.clear {
+    clear: both;
+}
